@@ -18,20 +18,23 @@ namespace LoLClient
         PKT_C2S_Ping_Load_Info = 0x16,
         PKT_S2C_AutoAttack = 0x1A,
 
-        PKT_S2C_FogUpdate2 = 0x23,
+        PKT_S2C_AddGold = 0x22,
+        PKT_S2C_CreateRegion = 0x23,
+        PKT_C2S_Mute = 0x27,
         PKT_S2C_PlayerInfo = 0x2A,
 
         PKT_S2C_ViewAns = 0x2C,
         PKT_C2S_ViewReq = 0x2E,
 
+        PKT_CHAR_SpawnPet = 0x37,
         PKT_C2S_SkillUp = 0x39,
-        PKT_S2C_SpawnProjectile = 0x3B,
+        PKT_S2C_FireSpellMissile = 0x3B,
         PKT_S2C_AttentionPing = 0x40,
 
         PKT_S2C_Emotion = 0x42,
         PKT_C2S_unkstart = 0x47,
         PKT_C2S_Emotion = 0x48,
-        PKT_S2C_HeroSpawn = 0x4C,
+        PKT_S2C_CreateHero = 0x4C,
         PKT_S2C_Announce = 0x4D,
 
         PKT_C2S_StartGame = 0x52,
@@ -43,6 +46,7 @@ namespace LoLClient
 
         PKT_S2C_MoveAns = 0x61,
         PKT_S2C_StartSpawn = 0x62,
+        PKT_S2C_CreateNeutral = 0x63,
         PKT_C2S_ClientReady = 0x64,
         PKT_S2C_LoadHero = 0x65,
         PKT_S2C_LoadName = 0x66,
@@ -51,34 +55,49 @@ namespace LoLClient
         PKT_S2C_SetTarget = 0x6A,
         PKT_S2C_BuyItemAns = 0x6F,
 
+        PKT_S2C_SetSpellData = 0x70,
         PKT_C2S_MoveReq = 0x72,
         PKT_C2S_MoveConfirm = 0x77,
+        PKT_S2C_SpawnMinion = 0x7C,
 
         PKT_C2S_LockCamera = 0x81,
         PKT_C2S_BuyItemReq = 0x82,
         PKT_S2C_QueryStatusAns = 0x88,
+        PKT_S2C_QuestComplete = 0x8C,
         PKT_C2S_Exit = 0x8F,
 
         PKT_World_SendGameNumber = 0x92,
         PKT_S2C_Ping_Load_Info = 0x95,
+        PKT_S2C_ReconnectInfo = 0x98,
         PKT_C2S_CastSpell = 0x9A,
         PKT_S2C_TurretSpawn = 0x9D,
 
+        PKT_S2C_Pause = 0xA1,
         PKT_C2S_Surrender = 0xA4,
         PKT_C2S_StatsConfirm = 0xA8,
         PKT_S2C_SetHealth = 0xAE,
         PKT_C2S_Click = 0xAF,
 
+        PKT_S2C_SpellAnimation = 0xB0,
+        PKT_S2C_Tutorial = 0xB3,
         PKT_S2C_CastSpellAns = 0xB5,
+        PKT_S2C_AfkWarning = 0xB8,
         PKT_S2C_MinionSpawn = 0xBA,
         PKT_C2S_SynchVersion = 0xBD,
         PKT_C2S_CharLoaded = 0xBE,
 
         PKT_S2C_GameTimer = 0xC1,
         PKT_S2C_GameTimerUpdate = 0xC2,
-
         PKT_S2C_CharStats = 0xC4,
-        PKT_S2C_LevelPropSpawn = 0xD0,
+        PKT_S2C_EndGame = 0xC6,
+        PKT_S2C_SpawnBot = 0xCF,
+        
+        PKT_S2C_SpawnLevelProp = 0xD0,
+        PKT_S2C_UpdateLevelProp = 0xD1,
+        PKT_S2C_HandleCapturePointUpdate = 0xD3,
+        
+        PKT_S2C_GoldGain = 0xE4,
+        PKT_S2C_ActivateMinionCamp = 0xE4,
 
 
         PKT_Batch = 0xFF
